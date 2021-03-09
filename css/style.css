@@ -16,7 +16,7 @@ body {
   height: 70px;
   margin-left: 14px;
   border-radius: 50%;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .logo:hover {
@@ -103,3 +103,47 @@ header {
   width: 100%;
 }
 
+#portfolio {
+  background-color: #f8f8f8;
+  padding: 100px;
+}
+
+#portfolio h1 {
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+}
+#portfolio p {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: rgb(94, 88, 88);
+  font-family: serif;
+  padding-left: 100px;
+  padding-right: 100px;
+  word-spacing: 0.1em;
+  word-wrap: break-word;
+}
+
+#get-more-info {
+  min-height: 55vh;
+}
+
+#get-more-info h2 {
+  margin-top: 120px;
+  font-weight: lighter;
+  font-size: 1.7em;
+  word-spacing: 0.1em;
+}
+
+hr {
+  width: 5%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(167, 162, 162);
+}
+
+#get-more-info p {
+  margin-top: 30px;
+  color: rgb(78, 73, 73);
+  font-size: 1.3em;
+}
