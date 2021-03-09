@@ -1,0 +1,38 @@
+body {
+  margin-top: 14px;
+  margin-right: 14px;
+  margin-left: 14px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 14px;
+  border-radius: 50%;
+}
+a {
+  text-decoration: none;
+}
+button {
+  margin-left: 50px;
+  color: red;
+  border-color: red;
+}
+.navigation {
+  color: red;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.logo-nav-flex {
+  display: flex;
+  text-align: right;
+}
+
+nav {
+  width: 100%;
+}
+
+#header{
+  font-size: 3.5em;
+}
