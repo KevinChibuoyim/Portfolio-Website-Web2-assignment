@@ -162,8 +162,7 @@ hr {
 }
 
 .more-on-behance,
-.online-soon
-.contact-button {
+.online-soon .contact-button {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 15px;
@@ -174,8 +173,9 @@ hr {
 
 .more-on-behance {
   border: 2px solid #d24d57;
-  color: #d24d57;}
-  
+  color: #d24d57;
+}
+
 .contact-button {
   border: 2px solid white;
   color: white;
@@ -250,4 +250,3 @@ hr {
   font-size: 1.8em;
   font-weight: 400;
 }
-
