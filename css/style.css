@@ -16,7 +16,7 @@ body {
   height: 70px;
   margin-left: 14px;
   border-radius: 50%;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease-in-out;
 }
 
 .logo:hover {
@@ -44,13 +44,18 @@ button {
 
 .top-button:hover {
   cursor: pointer;
-  color: red;
+  color: #d24d57;
   background: #fff;
+  transition: ease-in-out 0.5s;
 }
 .navigation {
-  color: #fff;
+  color: #d24d57;
   margin-left: 10px;
   font-weight: bold;
+}
+
+.fixed-header {
+  position: fixed;
 }
 .logo-nav-flex {
   display: flex;
@@ -58,8 +63,27 @@ button {
   margin-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  position: fixed;
+  z-index: 1;
 }
-
+.header-nav {
+  top: 0;
+  right: 0;
+  padding: 50px;
+  display: block;
+  text-align: right;
+  position: fixed;
+  z-index: 1;
+  background: white;
+}
+.header-nav a {
+  padding: 20px;
+}
+.header-nav a:hover {
+  margin-top: 50px;
+  text-decoration: underline 1px;
+  text-decoration-color: red;
+}
 nav {
   width: 100%;
 }
@@ -95,7 +119,7 @@ header {
   z-index: -3;
   width: 100%;
   height: 100%;
-  background: rgba(210, 77, 87, 1);
+  background: #d24d57;
 }
 
 .overlay-image {
@@ -162,7 +186,10 @@ hr {
 }
 
 .more-on-behance,
-.online-soon .contact-button {
+.online-soon,
+.contact-button,
+.last-button,
+.last-button2 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 15px;
@@ -176,21 +203,51 @@ hr {
   color: #d24d57;
 }
 
-.contact-button {
-  border: 2px solid white;
-  color: white;
-}
-.contact-button:hover {
-  background: #d24d57;
-  color: #fff;
-  cursor: pointer;
-}
 .more-on-behance:hover {
   background: #d24d57;
   color: #fff;
   cursor: pointer;
 }
+.contact-button {
+  border: 2px solid white;
+  color: white;
+  padding: 1.5em;
+  width: 20%;
+  font-size: 1em;
+  margin: 3.75em;
+  transition: ease-in-out 0.5s;
+}
+.contact-button:hover {
+  background: #fff;
+  color: #d24d57;
+  cursor: pointer;
+}
 
+.last-button {
+  border: 2px solid #333333;
+  color: #4d4d4d;
+  background: #1b191960;
+  font-family: serif;
+}
+.last-button:hover {
+  background: rgb(28, 180, 207);
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+.last-button2 {
+  border: 2px solid #333333;
+  color: #4d4d4d;
+  background: #1b191960;
+  font-family: serif;
+}
+
+.last-button2:hover {
+  background: rgb(190, 8, 93);
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
 .online-soon {
   border: 2px solid rgb(173, 171, 171);
   color: rgb(173, 171, 171);
@@ -199,14 +256,14 @@ hr {
 
 #about-me {
   padding: 5em;
-  background: #016052;
+  background: #016052 url(../images/kevin.jpg) no-repeat;
   min-height: 100vh;
 }
 
 #about-me h1 {
   font-size: 2.5em;
   color: white;
-  margin-top: 50px;
+  margin-top: 100px;
   letter-spacing: 0.1em;
 }
 #about-me p {
@@ -249,4 +306,35 @@ hr {
   font-family: serif;
   font-size: 1.8em;
   font-weight: 400;
+}
+
+.contact-nav {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 0.8125em;
+}
+
+.contact-buttom {
+  min-height: 50vh;
+  background-color: #252525;
+  padding: 5em;
+  font-family: serif;
+}
+.contact-buttom h3 {
+  color: #4d4d4d;
+  font-size: 0.8125em;
+}
+.contact-buttom a {
+  color: #808080;
+}
+.contact-buttom span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contact-buttom p {
+  margin-top: 50px;
+  margin-right: 300px;
+  margin-left: 300px;
+  font-size: 1em;
+  color: #4d4d4d;
 }
