@@ -72,8 +72,8 @@ nav {
 
 #header-info {
   font-size: 1.8em;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
   font-family: serif;
   font-weight: 525;
   margin-top: 30px;
@@ -132,9 +132,11 @@ header {
   font-weight: lighter;
   font-size: 1.7em;
   word-spacing: 0.1em;
+  color: #3b3838;
 }
 
 hr {
+  margin-top: 25px;
   width: 5%;
   position: relative;
   left: 50%;
@@ -149,7 +151,6 @@ hr {
   padding-left: 300px;
   padding-right: 300px;
   font-family: serif;
-
 }
 
 .get-more-info-text {
@@ -161,7 +162,8 @@ hr {
 }
 
 .more-on-behance,
-.online-soon {
+.online-soon
+.contact-button {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 15px;
@@ -172,14 +174,80 @@ hr {
 
 .more-on-behance {
   border: 2px solid #d24d57;
-  color: #d24d57;
+  color: #d24d57;}
+  
+.contact-button {
+  border: 2px solid white;
+  color: white;
+}
+.contact-button:hover {
+  background: #d24d57;
+  color: #fff;
+  cursor: pointer;
 }
 .more-on-behance:hover {
   background: #d24d57;
   color: #fff;
   cursor: pointer;
 }
+
 .online-soon {
   border: 2px solid rgb(173, 171, 171);
   color: rgb(173, 171, 171);
+  cursor: pointer;
 }
+
+#about-me {
+  padding: 5em;
+  background: #016052;
+  min-height: 100vh;
+}
+
+#about-me h1 {
+  font-size: 2.5em;
+  color: white;
+  margin-top: 50px;
+  letter-spacing: 0.1em;
+}
+#about-me p {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  color: #fff;
+  font-family: serif;
+  padding-left: 100px;
+  padding-right: 100px;
+  word-spacing: 0.1em;
+  word-wrap: break-word;
+  text-align: center;
+}
+#about-me a {
+  border-bottom: 1px solid transparent;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+#contact {
+  background: #d24d57;
+  min-height: 100vh;
+  padding: 5em;
+}
+#contact h1 {
+  letter-spacing: 0.1em;
+  font-size: 2.5em;
+  color: white;
+  margin-top: 100px;
+  padding-right: 300px;
+  padding-left: 300px;
+}
+
+#contact p {
+  margin-top: 50px;
+  margin-right: 175px;
+  margin-left: 175px;
+  color: white;
+  font-family: serif;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
